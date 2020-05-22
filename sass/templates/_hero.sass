@@ -1,0 +1,97 @@
+.hero 
+    background: $dark url('../img/main-bg.jpg') center center / cover no-repeat
+    height: 100vh
+    position: relative
+    display: flex
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, 0.7)
+    &::after 
+        content: ''
+        width: 100%
+        height: 3.46rem
+        bottom: 0
+        left: 0
+        right: 0
+        background-color: $dark
+        position: absolute
+    &__button
+        margin-right: 20px
+    &__content
+        position: relative
+        max-width: 47.85rem
+        margin-left: 4.28rem
+    &__text 
+        font-size: 1.57rem
+        max-width: 500px
+        color: #fff
+    &__instagram 
+        max-width: 80px
+        height: 100%
+        position: absolute
+        left: 0
+        top: 0
+    &__scroll-down 
+        position: absolute
+        left: 0
+        bottom: 0
+        min-width: 247px
+        min-height: 97px
+        background-color: $dark
+        display: flex
+        justify-content: center
+        align-items: center
+        text-transform: uppercase
+        color: #fff
+        text-decoration: none
+        z-index: 3
+        &::after 
+            content: ''
+            border: 1.5px solid $logo
+            border-radius: 100px
+            background: url('../img/vector.svg') center center no-repeat
+            padding: 15px 15px
+            margin-left: 12px
+        
+       
+.instagram 
+    background-color: $dark
+    display: flex
+    justify-content: center
+    align-items: center
+    &__link 
+        color: $logo
+        transform: rotate(-90deg)
+        text-transform: uppercase
+        text-decoration: none
+        display: flex
+        align-items: center
+        margin-right: 8px
+        line-height: 0.8px
+        &::before 
+            content: ''
+            width: 51px
+            height: 1px
+            background-color: $logo
+            margin-right: 8px
+           
+
+.title 
+    margin-top: 0
+    font-family: 'Yeseva One', cursive
+    text-transform: uppercase
+    font-size: 2.857rem
+    color: #fff
+    &__primary 
+        color: $logo
+
+.button
+    &--outline 
+        background-color: transparent
+        border: 1px solid #ffffff
+        color: #ffffff
