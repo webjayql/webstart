@@ -450,6 +450,17 @@ template {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.hero::after {
+  content: '';
+  width: 100%;
+  height: 3.46rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #131313;
+  position: absolute;
+}
+
 .hero__button {
   margin-right: 20px;
 }
@@ -493,6 +504,7 @@ template {
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
+  z-index: 3;
 }
 
 .hero__scroll-down::after {
@@ -582,11 +594,52 @@ img {
   padding-bottom: 6rem;
 }
 
+.section--dark {
+  background-color: #131313;
+  color: #ffffff;
+}
+
 .section-title {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Yeseva One', sans-serif;
   margin-bottom: 1.5rem;
+}
+
+.section-title--left {
+  text-align: left;
+}
+
+.section-title__heading {
+  text-transform: uppercase;
+  font-family: 'Yeseva One', sans-serif;
+  line-height: 138.6%;
+}
+
+.section-title__heading--primary {
+  color: #E3B873;
+}
+
+.section-title__word {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-title__word::after {
+  content: '';
+  width: 90px;
+  height: 2px;
+  background-color: #E3B873;
+  margin-left: 2rem;
+}
+
+.section-title__text {
+  font-size: 1.08rem;
+  line-height: 2.07rem;
 }
 
 .section-title__img {
@@ -623,6 +676,10 @@ img {
 .col {
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
+}
+
+.col-50 {
+  max-width: 50%;
 }
 
 .card__text {
@@ -668,7 +725,7 @@ img {
   left: 0;
   top: 0;
   right: 0;
-  bottom: 0;
+  buttom: 0;
   background-color: rgba(19, 19, 19, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -679,10 +736,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.modal-visible {
-  opacity: 1;
-  visibility: visible;
 }
 
 .modal__dialog {
@@ -761,36 +814,107 @@ img {
   color: #ffffff;
 }
 
+.modal__policy {
+  margin-bottom: 2rem;
+}
+
+.modal__button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 .policy__checkbox {
   opacity: 0;
   visibility: hidden;
 }
-.modal__policy {
-  margin-bottom: 2.5rem;
-}
-.modal__button {
-  align-self: flex-end;
+
+.policy__checkbox:checked + .policy__label::before {
+  background: #E3B873 url("../img/check.svg") center no-repeat;
 }
 
 .policy__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .policy__label::before {
   content: '';
   width: 18px;
   height: 18px;
-  border: 1px solid orange;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  border: 1px solid #E3B873;
   margin-right: 8px;
-  cursor: pointer;
+  border-radius: 50%;
 }
-.policy__checkbox:checked + .policy__label::before {
-  background: orange url('../img/check.svg') center no-repeat;
+
+.modal-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.swiper-slide__text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-bottom: 2.42rem;
+  padding-bottom: 2rem;
+}
+
+.swiper-slide__heading {
+  font-size: 1.285rem;
+  line-height: 1.78rem;
+  font-family: 'Yeseva One', sans-serif;
+  color: #E3B873;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+
+.swiper-button-prev {
+  background: url("../img/arrow-prev.svg") no-repeat center;
+  bacground-size: 42px;
+  width: 42px;
+  bottom: 0;
+  top: auto;
+  left: 0;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next {
+  background: url("../img/arrow-left.svg") no-repeat center;
+  bacground-size: 42px;
+  width: 42px;
+  bottom: 0;
+  top: auto;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  buttom: -10px;
 }
 
 @media screen and (max-width: 1200px) {
