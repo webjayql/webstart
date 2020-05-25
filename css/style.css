@@ -700,6 +700,14 @@ img {
   border-radius: 30px;
 }
 
+.invalid {
+  color: tomato;
+}
+
+.card {
+  margin-bottom: 20rem;
+}
+
 .card__text {
   background: #FFFFFF;
   -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
@@ -809,7 +817,17 @@ img {
   background-color: transparent;
   font-size: 1.285rem;
   padding: 0.5rem 0;
+}
+
+.modal__input-group {
   margin-bottom: 3.428rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .modal__input:last-of-type {
@@ -1069,6 +1087,104 @@ img {
 
 .control__label {
   display: block;
+}
+
+.footer__wrap {
+  background-color: #181818;
+  max-width: 63.07rem;
+  margin: auto;
+  padding: 2.5rem;
+  margin-top: -20rem;
+  max-width: 63.07rem;
+}
+
+.footer__title {
+  text-transform: uppercase;
+  font-family: 'Yeseva One', cursive;
+  font-weight: normal;
+  font-size: 1.428rem;
+  text-align: center;
+  margin-bottom: 3.214rem;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 40rem;
+  margin: auto;
+}
+
+.footer__input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.footer__input-group--fullwidth {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.footer__input {
+  color: #ffffff;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: transparent;
+  font-size: 1.285rem;
+  padding: 0.5rem 0;
+  margin-bottom: 3.428rem;
+  font-family: 'Yeseva One', cursive;
+  font-weight: normal;
+}
+
+.footer__input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.footer__input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.footer__input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.footer__input::placeholder {
+  color: #ffffff;
+}
+
+.footer__label {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.footer__policy {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 2rem;
+}
+
+.footer__button {
+  margin: auto;
+  padding: 1.285rem 4.85rem;
+}
+
+.center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 1200px) {
