@@ -6,6 +6,7 @@
         padding: 2.5rem
         margin-top: -20rem
         max-width: 63.07rem
+        margin-bottom: 3.7rem
     &__title
         text-transform: uppercase
         font-family: 'Yeseva One', cursive
@@ -48,5 +49,33 @@
     &__button
         margin: auto
         padding: 1.285rem 4.85rem
-.center
+    &__map
+        text-align: center
+        &-title
+            font-family: 'Yeseva One'
+            font-style: normal
+            font-weight: normal
+            font-size: 20px
+            line-height: 28px
+            text-align: center
+            text-transform: uppercase
+            color: $logo
+            margin-bottom: 1.9rem
+        &-link
+            color: $logo
+            font-family: 'Yeseva One'
+            font-size: 20px
+            text-decoration: none
+            margin-bottom: 1.5rem
+        &-link a
+            margin-right: 1rem
+            &::nth-last-child()
+                margin-right: 0
+
+.center 
     justify-content: center
+
+.maps 
+    margin-top: 1.5rem
+    max-width: 925px
+    margin: auto
