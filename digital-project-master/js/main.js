@@ -59,7 +59,7 @@ $(document).ready(function () {
                 email: "Give us your email in format mail@mail.com"
             },
 
-        }
+        },
         submitHandler: function (form) {
             $.ajax({
                 type: "POST",
@@ -79,6 +79,5 @@ $(document).ready(function () {
 });
 // маска для телефона
 $('[type=tel]').mask('+7 (000) 000-00-00', {
-placeholder: "+7 (___)___-__-__"
-});
+    placeholder: "+7 (___)___-__-__"
 });
