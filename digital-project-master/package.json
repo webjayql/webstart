@@ -1,5 +1,5 @@
 {
-  "name": "digital-project",
+  "name": "digital-project-master",
   "version": "1.0.0",
   "description": "started web start",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/webjayql/digital-project.git"
+    "url": "git+https://github.com/webjayql/digital-project-master.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/webjayql/digital-project/issues"
+    "url": "https://github.com/webjayql/digital-project-master/issues"
   },
-  "homepage": "https://github.com/webjayql/digital-project#readme",
+  "homepage": "https://github.com/webjayql/digital-project-master#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2"
